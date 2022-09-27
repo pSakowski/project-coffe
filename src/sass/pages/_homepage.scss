@@ -1,0 +1,85 @@
+.splash {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url("/images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .splash-inner {
+        top: 30%;
+        text-align: center;
+        line-height: 60px;
+        position: absolute;
+        width: 100%;
+        word-wrap:break-word;
+    }
+
+    .page-title {
+        letter-spacing: 15px;
+        font-size: 80px;
+        position: relative;
+        color: $color-first;
+        margin-bottom: -100px;
+    }
+
+    .page-title-two {
+        letter-spacing: 5px;
+        font-size: 80px;
+        position: relative;
+        color: $color-first;
+    }
+}
+
+hr {
+    color: $color-first;
+}
+
+/* NAVIGATION */
+
+.title {
+    text-align: left;
+    padding: 10px;
+    color: white;
+    line-height: 0.5px;
+    margin: 0 auto;
+
+    h3 {
+        font-size: 25px;
+        letter-spacing: 6px;
+    }
+    
+    p {
+        font-size: 10px;
+        letter-spacing: 4px;
+        font-weight: bold;
+    }
+}
+
+.navigation {
+    margin: 0 auto;
+    padding: 5px;
+    color: white;
+    line-height: 0.5px;
+    
+    a {
+        text-decoration: none;
+        color: gray;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+.navigation ul {
+    list-style-type: none;
+    line-height: 0.5px;
+    float: right;
+    margin-top: -55px;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+}
