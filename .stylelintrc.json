@@ -11,7 +11,7 @@
       "declaration-block-trailing-semicolon": "always",
       "indentation": 2,
       "max-empty-lines": 2,
-      "max-nesting-depth": [3, {
+      "max-nesting-depth": [5, {
         "ignore": ["pseudo-classes"]
       }],
       "rule-empty-line-before": [ "always", {
@@ -19,7 +19,6 @@
         "ignore": ["after-comment"]
       } ],
       "unit-whitelist": null,
-      "scss/selector-no-redundant-nesting-selector": true,
-      "scss/no-duplicate-dollar-variables": true
+      "scss/selector-no-redundant-nesting-selector": true
     }
   }
