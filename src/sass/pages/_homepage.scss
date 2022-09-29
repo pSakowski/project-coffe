@@ -45,7 +45,7 @@
 
 /* HEAD */
 .header {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: absolute;
   background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url("/images/background.png");
@@ -53,9 +53,9 @@
   background-size: cover;
 
   .logo {
-    font-size: 50px;
+    font-size: 30px;
     position: relative;
-    top: 300px;
+    top: 200px;
     color: $color-first;
     line-height: 120px;
 
@@ -64,28 +64,94 @@
       text-align: center;
       letter-spacing: 10px;
       top: 40px;
+      @media (max-width: 550px){
+        font-size: 3.1rem;
+      }
     }
 
     .logo-right {
       position: relative;
       text-align: center;
+      @media (max-width: 550px){
+        font-size: 3.1rem;
+      }
     }
 
     hr {
+      color: $color-first;
       position: relative;
       border: 2px solid;
-      background-color: $color-first;
       border-radius: 2px;
       width: 30%;
     }
   }
+}
 
-  .discover {
-    text-align: center;
-    top: 500px;
-    position: relative;
-    color: rgb(245, 245, 245);
-    font-size: 20px;
-    letter-spacing: 3px;
+.discover {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  top: 700px;
+  @media (max-width: 550px){
+    font-size: 1.1rem;
   }
+}
+
+/* ABOUT US */
+
+.about-us {
+  font-family: $font-header;
+  position: relative;
+  top: 1500px;
+  height: 600px;
+  text-align: center;
+  background: linear-gradient( rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7) ),url("/images/about-us.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+
+  hr {
+    color: $color-first;
+    position: relative;
+    border: 2px solid;
+    border-radius: 2px;
+    width: 60%;
+  }
+
+  h1 {
+    padding: 10px;
+    margin: 0;
+    letter-spacing: 8px;
+    font-size: 50px;
+    color: $color-first;
+  }
+
+  p {
+    text-align: left;
+    margin: 40px 100px;
+    position: relative;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 25px;
+    @media (max-width: 550px){
+      font-size: 1.1rem;
+    }
+  }
+
+  p:last-of-type {
+    width: 70%;
+    text-align: right;
+    margin: 0 auto;
+    padding-right: 90px;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  position: relative;
+  top: 1500px;
+  text-align: center;
+  padding: 3px;
+  color: black;
 }
