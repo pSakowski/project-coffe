@@ -1,5 +1,162 @@
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 30px;
+/* NAVIGATION */
+.navbar-header {
+  color: white;
+
+  .logo-ti {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .logo-ve {
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+}
+
+.nav {
+  position: relative;
+  text-align: right;
+  font-size: 15px;
+  top: -55px;
+  @media (max-width: 800px){
+  }
+
+  li {
+    display: inline;
+  }
+  
+  a {
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+}
+
+/* HEAD */
+.header {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url("/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: $font-header;
+
+  .logo {
+    font-size: 50px;
+    position: relative;
+    top: 50px;
+    color: $color-first;
+    line-height: 120px;
+
+    .logo-left {
+      position: relative;
+      letter-spacing: 15px;
+      top: 40px;
+      @media (max-width: 800px){
+        font-size: 50px;
+        top: 10px;
+        line-height: 50px;
+      }
+    }
+
+    .logo-right {
+      position: relative;
+      text-align: right;
+      letter-spacing: 15px;
+      line-height: 100px;
+      @media (max-width: 800px){
+        font-size: 40px;
+        top: -40px;
+        line-height: 60px;
+      }
+    }
+
+    hr {
+      color: $color-first;
+      position: relative;
+      border: 2px solid;
+      border-radius: 2px;
+      width: 30%;
+      @media (max-width: 800px){
+        font-size: 2.0rem;
+        top: -70px;
+      }
+    }
+  }
+}
+
+.discover {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  top: 150px;
+  @media (max-width: auto){
+    font-size: 1.1rem;
+    top: 600px;
+  }
+}
+
+/* PRODUCT */
+.product {
+}
+
+/* ABOUT US */
+
+.about-us {
+  position: relative;
+  height: 600px;
+  text-align: center;
+  background: linear-gradient( rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7) ),url("/images/about-us.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+
+  hr {
+    color: $color-first;
+    position: relative;
+    border: 2px solid;
+    border-radius: 2px;
+    width: 60%;
+  }
+
+  h1 {
+    padding: 10px;
+    margin: 0;
+    letter-spacing: 8px;
+    font-size: 50px;
+    color: $color-first;
+  }
+
+  p {
+    text-align: left;
+    margin: 40px 100px;
+    position: relative;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 25px;
+    @media (max-width: 550px){
+      font-size: 1.1rem;
+    }
+  }
+
+  p:last-of-type {
+    width: 70%;
+    text-align: right;
+    margin: 0 auto;
+    padding-right: 90px;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  position: relative;
+  top: 1500px;
+  text-align: center;
+  padding: 3px;
+  color: black;
 }
