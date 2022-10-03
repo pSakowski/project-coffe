@@ -35,7 +35,6 @@
           <div class="navbar-header">
             <h1 class="logo-ti">EL TIGRE</h1>
             <h1 class="logo-ve">VENEZUELA COFFEE BEANS</h1>
-            </a>
           </div>
           <ul class="nav navbar-nav">
             <li class="active"><a href="#home">Home</a></li>
@@ -54,20 +53,19 @@
         <i class="fa-regular fa-circle-down"></i>
       </div>
       </div>
-    </div>
-    <div class="about-us">
-      <div class="container">
-        <h1>ABOUT US</h1>
-        <hr>
-        <p><i>Who are we? Just a bunch of friends with a love for a good coffe and desire to create something new, something original.</i></p>
-        <p><i>Our coffees reflect us - young, wild and free.<br>We are on the journey of new tastes...</i></p>
-        <p><i>Join us!</i></p>
+      <div class="about-us">
+        <div class="container">
+          <h1>ABOUT US</h1>
+          <hr>
+          <p><i>Who are we? Just a bunch of friends with a love for a good coffe and desire to create something new, something original.</i></p>
+          <p><i>Our coffees reflect us - young, wild and free.<br>We are on the journey of new tastes...</i></p>
+          <p><i>Join us!</i></p>
+        </div>
       </div>
-    </div>
-    <footer>
-      <p>© 2021 EL TIGRE inc.</p>
-    </footer>
   </header>
+  <footer>
+    <p>© 2021 EL TIGRE inc.</p>
+  </footer>
 
 
   <div id="pages">
@@ -81,6 +79,30 @@
       <div class="contact-wrapper container"></div>
     </section>
   </div>
+
+  <script id="template-home-widget" type="text/x-handlebars-template">
+    <div class="home" class="active">
+        <div class='info'>
+          <div class='orders'>
+            <a href="#order">
+              <h1>ORDER ONLINE</h1>
+            </a>
+            <img src='images/assets/pizza-1.jpg'/>
+          </div>
+          <div class='bookings'>
+            <a href="#booking">
+              <h1>BOOK A TABLE</h1>
+            </a>
+            <img src='images/assets/pizza-2.jpg'/>
+          </div>
+        </div>
+        <div class="open">
+          <h1>OPENING HOURS:</h1>
+          <p>TUE-SUN, 12PM - 12AM</p>
+        </div>
+      </div>
+    </div>
+  </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="./js/app.js" type="module"></script>
