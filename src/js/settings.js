@@ -1,9 +1,9 @@
 export const select = {
   templateOf: {
-    menuProduct: '#template-menu-product',
+    homeWidget: '#template-home-widget',
   },
   containerOf: {
-    menu: '#product-list',
+    home: '.home-wrapper',
     pages: '#pages',
   },
 };
@@ -23,5 +23,5 @@ export const settings = {
   
 export const templates = {
   // eslint-disable-next-line no-undef
-  menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
+  homeWidget: Handlebars.compile(document.querySelector(select.templateOf.homeWidget).innerHTML),
 };
