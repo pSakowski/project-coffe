@@ -1,16 +1,14 @@
-import { settings, templates } from './settings.js';
+import {select, settings } from './settings.js';
+import Product from './Products.js';
 
 const app = {
 
-  initProductPage: function(){
+  initMenu: function () {
     const thisApp = this;
-
-    const productTemplates = document.querySelector('#template-products');
-    const container = document.querySelector('#pages #product');
-
-    container.innerHTML = templates.productList(productTemplates);
-  
-    console.log(thisApp.data.products);
+    console.log('thisApp.data:', thisApp.data);
+    for (let productData in thisApp.data.products){
+      new Product(thisApp.data.products[productData].id, thisApp.data.products[productData]);
+    }
   },
 
   initData: function() {
@@ -23,16 +21,23 @@ const app = {
       .then((parsedResponse) => {
         this.data.products = parsedResponse;
         console.log(parsedResponse);
-
-        this.initProductPage();
+        
+        app.initMenu();
       });
   },
 
+  initProduct: function (){
+    const thisApp = this;
+
+    thisApp.productTemplate = document.querySelector(select.containerOf.pages);
+    thisApp.pages = new Product(thisApp.productTemplate);
+  },
 
   init: function() {
     const thisApp = this;
 
     thisApp.initData();
+    thisApp.initProduct();
   },
 };
 
