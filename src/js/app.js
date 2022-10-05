@@ -1,13 +1,14 @@
 import { settings, templates } from './settings.js';
 
 const app = {
-  initHomePage: function(){
+
+  initProductPage: function(){
     const thisApp = this;
 
-    const homeTemplates = document.querySelector('#template-home-widget');
-    const container = document.querySelector('#pages #home');
+    const productTemplates = document.querySelector('#template-products');
+    const container = document.querySelector('#pages #product');
 
-    container.innerHTML = templates.homeWidget(homeTemplates);
+    container.innerHTML = templates.productList(productTemplates);
   
     console.log(thisApp.data.products);
   },
@@ -22,13 +23,15 @@ const app = {
       .then((parsedResponse) => {
         this.data.products = parsedResponse;
         console.log(parsedResponse);
-        this.initHomePage();
+
+        this.initProductPage();
       });
   },
 
 
   init: function() {
     const thisApp = this;
+
     thisApp.initData();
   },
 };

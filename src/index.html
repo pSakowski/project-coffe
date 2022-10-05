@@ -13,21 +13,6 @@
   </head>
   <body>
 
-  <!-- <section class="navigation">
-    <div class="container">
-      <div class="nav-logo col-5">
-        <h1 class="logo-ti">EL TIGRE</h1>
-        <h1 class="logo-ve">VENEZUELA COFFEE BEANS</h1>
-      </div>
-
-      <div class="links col-12">
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </section> -->
-
   <header class="header">
     <div class="container">
       <nav class="navbar navbar-inverse">
@@ -44,8 +29,8 @@
         </div>
       </nav>
       <div class="logo">
-        <h1 class="logo-left">HOME OF</h1>
-        <h1 class="logo-right">ORIGINAL TASTES</h1>
+        <h1>HOME OF</h1>
+        <h1>ORIGINAL TASTES</h1>
         <hr>
       </div>
       <div class="discover">
@@ -56,11 +41,8 @@
   </header>
 
   <div id="pages">
-    <section id="home">
-      <div class="home-wrapper container"></div>
-    </section>
-    <section id="products">
-      <div id="product-list" class="product-list container"></div>
+    <section id="product">
+      <div class="product-wrapper container"></div>
     </section>
     <section id="contact">
       <div class="contact-wrapper container"></div>
@@ -81,31 +63,14 @@
     <p>© 2021 EL TIGRE inc.</p>
   </footer>
 
-  <script id="template-home-widget" type="text/x-handlebars-template">
-    <div class="home" class="active">
-        <div class='info'>
-          <div class='orders'>
-            <a href="#order">
-              <h1>ORDER ONLINE</h1>
-            </a>
-            <!-- <img src='images/assets/pizza-1.jpg'/> -->
-          </div>
-          <div class='bookings'>
-            <a href="#booking">
-              <h1>BOOK A TABLE</h1>
-            </a>
-            <!-- <img src='images/assets/pizza-2.jpg'/> -->
-          </div>
-        </div>
-        <div class="open">
-          <h1>OPENING HOURS:</h1>
-          <p>TUE-SUN, 12PM - 12AM</p>
-        </div>
-      </div>
-    </div>
+  <script id="template-products" type="text/x-handlebars-template">
+    <article class="products">
+      <h2>{{ title }}</h2>
+      <h2>roasting: {{roasting}}</h2>
+    </article>
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
-  <script src="./js/app.js" type="module"></script>
+  <script src="/js/app.js" type="module"></script>
   </body>
 </html>

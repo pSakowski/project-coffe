@@ -1,11 +1,14 @@
 export const select = {
   templateOf: {
-    homeWidget: '#template-home-widget',
+    productList: '#template-products',
   },
   containerOf: {
-    home: '.home-wrapper',
+    product: '.product-wrapper',
     pages: '#pages',
   },
+  nav: {
+    links: '.navigation a',
+  }
 };
   
 export const classNames = {
@@ -18,10 +21,15 @@ export const settings = {
   db: {
     url: '//localhost:3131',
     products: 'products',
+    title: '.title',
+    description: '.description',
+    image: '.image',
+    roasting: '.roasting',
+    intensity: '.intensity',
   },
 };
   
 export const templates = {
   // eslint-disable-next-line no-undef
-  homeWidget: Handlebars.compile(document.querySelector(select.templateOf.homeWidget).innerHTML),
+  productList: Handlebars.compile(document.querySelector(select.templateOf.productList).innerHTML),
 };
