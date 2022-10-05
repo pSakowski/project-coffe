@@ -41,11 +41,14 @@
   </header>
 
   <div id="pages">
+    <section id="home" class="active">
+      <div class="home-wrapper container"></div>
+    </section>
     <section id="product">
       <div class="product-wrapper container"></div>
     </section>
-    <section id="contact">
-      <div class="contact-wrapper container"></div>
+    <section id="booking">
+      <div class="booking-wrapper container"></div>
     </section>
   </div>
 
@@ -64,9 +67,15 @@
   </footer>
 
   <script id="template-products" type="text/x-handlebars-template">
-    <article class="products">
-      <h2>{{ title }}</h2>
-      <h2>roasting: {{roasting}}</h2>
+    <article class="product">
+      <div class="title">
+        <h1>PRODUCTS</h1>
+        <hr>
+      </div>
+      <div class="coffe-1">
+        <p>{{ title }}</p>
+        {{ title }}
+      </div>
     </article>
   </script>
 

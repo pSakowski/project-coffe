@@ -1,19 +1,19 @@
 /* PRODUCTS */
-.product {
-    text-align: center;
-    font-family: $font-header;
+.title {
+  text-align: center;
+  font-family: $font-header;
 
-    h1 {
-        color: $color-first;
-        font-size: 50px;
-    }
+  h1 {
+    color: $color-first;
+    font-size: 50px;
+  }
     
-    hr {
-        color: $color-first;
-        position: relative;
-        top: -15px;
-        border: 2px solid;
-        border-radius: 2px;
-        width: 60%;
-      }
+  hr {
+    color: $color-first;
+    position: relative;
+    top: -15px;
+    border: 2px solid;
+    border-radius: 2px;
+    width: 60%;
+  }
 }
