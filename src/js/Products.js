@@ -2,10 +2,10 @@ import {select, templates} from './settings.js';
 import utils from './utils.js';
 
 class Product {
-  constructor (id, data){
+  constructor (data){
     const thisProduct = this;
 
-    thisProduct.id = id;
+    // thisProduct.id = id;
     thisProduct.data = data;
 
     thisProduct.renderInMenu();

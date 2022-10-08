@@ -28,9 +28,9 @@
           </ul>
         </div>
       </nav>
-      <div class="logo">
-        <h1>HOME OF</h1>
-        <h1>ORIGINAL TASTES</h1>
+      <div class="logo col-12">
+        <h1 class="logo-ho">HOME OF</h1>
+        <h1 class="logo-or">ORIGINAL TASTES</h1>
         <hr>
       </div>
       <div class="discover">
@@ -76,64 +76,22 @@
   <script id="template-product" type="text/x-handlebars-template">
     <div class="container">
       <div class="products">
-        <div class="row">
-          <div class="product-description col-6">
-            <h2>{{ title }}</h2>
-            <p>{{ description }}</p>
-          </div>
-          <div class="row">
-            <div class="product-info col-6">
-              <p class="roasting">ROASTING: <span>{{ roasting }}</span></p>
-              <p class="intensity">INTENSITY: <span> {{ intensity }}</span></p>
-            </div>
-          </div>
-          <div class="product-image col-5">
-            <img src="{{ image }}" alt="coffe-1">
-          </div>
+        <div class="product-title">
+          <h2>{{ title }}</h2>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="product-description col-6">
-        <h2>{{ first.title }}</h2>
-        <p>{{ first.description }}</p>
-      </div>
-      <div class="row">
-        <div class="product-info col-6">
-          <p class="roasting">ROASTING: <span>{{ first.roasting }}</span></p>
-          <p class="intensity">INTENSITY: <span> {{ first.intensity }}</span></p>
+        <div class="product-description">
+          <p>{{ description }}</p>
         </div>
-      </div>
-      <div class="product-image col-5">
-        <img src="{{ second.image }}" alt="coffe-2">
-      </div>
-    </div>
-    <div class="row">
-      <div class="product-description col-6">
-        <h2>{{ second.title }}</h2>
-        <p>{{ second.description }}</p>
-      </div>
-      <div class="row">
-        <div class="product-info col-6">
+        <div class="product-info">
           <p class="roasting">ROASTING: <span>{{ roasting }}</span></p>
           <p class="intensity">INTENSITY: <span> {{ intensity }}</span></p>
         </div>
-      </div>
-      <div class="product-image col-5">
-        <img src="{{ image }}" alt="coffe-1">
+        <div class="product-image">
+          <img src="{{ image }}" alt="coffe-1">
+        </div>
       </div>
     </div>
   </script>
-
-<!-- 
-  <h2>{{ title }}</h2>
-  <p>{{ description }}</p>
-  <p>ROASTING: {{ roasting }}</p>
-  <p>INTENSITY: {{ intensity }}</p>
-  <img src="{{ image-1 }}">
-  <img src="{{ image-2 }}">
-  <img src="{{ image-3 }}"> 
--->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="/js/app.js" type="module"></script>

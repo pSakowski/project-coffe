@@ -5,14 +5,14 @@
   margin: 0 10px;
 
   .logo-ti {
-    font-size: 16px;
-    letter-spacing: 3px;
+    font-size: 20px;
+    letter-spacing: 7px;
+    line-height: 2px;
   }
 
   .logo-ve {
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 2px;
-    line-height: 15px;
   }
 }
 
@@ -43,18 +43,37 @@
   background-repeat: no-repeat;
   background-size: cover;
   font-family: $font-header;
-  font-size: 40px;
+  font-size: 50px;
   @media (max-width: 800px){
     font-size: 1.5rem;
-    
   }
 
   .logo {
-    text-align: center;
-    top: 200px;
+    top: 300px;
     position: relative;
     color: $color-first;
-    line-height: 30%;
+    letter-spacing: 5px;
+    font-size: 65px;
+    @media (max-width: 1400px){
+      font-size: 60px;
+      top: 100px;
+    }
+    @media (max-width: 1030px){
+      font-size: 50px;
+    }
+    @media (max-width: 870px){
+      font-size: 30px;
+    }
+
+    .logo-ho {
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .logo-or {
+      margin: 0 auto;
+      text-align: right;
+    }
 
     hr {
       color: $color-first;
@@ -70,10 +89,10 @@
   position: relative;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 15px;
-  top: 350px;
-  @media (max-width: 800px){
-    top: 350px;
+  font-size: 20px;
+  top: 750px;
+  @media (max-width: 1400px){
+    top: 250px;
   }
 }
 
