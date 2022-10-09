@@ -34,7 +34,9 @@
         <hr>
       </div>
       <div class="discover">
-        <a href="#products">DISCOVER<br><br></b><i class="fa-regular fa-circle-down"></i><a>
+        <a href="#products">DISCOVER<a>
+        <br><br>
+        <i class="fa-regular fa-circle-down"></i>
       </div>
     </div>
   </header>
@@ -45,16 +47,16 @@
       <div class="home-wrapper container"></div>
     </section>
 
-    <section id="products">
+    <!-- <section id="products">
       <div id="product-list">
         <div class="title">
           <h1>PRODUCTS</h1>
           <hr>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- <section class="contact">
+    <section class="contact">
       <div class="title">
         <h1>CONTACT US</h1>
         <hr>
@@ -70,7 +72,7 @@
         <input type="submit" value="SUBMIT">
         </div>
       </form>
-    </section> -->
+    </section>
 
     <!-- <section class="about-us">
       <div class="container">
@@ -87,40 +89,22 @@
     <footer><p>© 2021 EL TIGRE inc.</p>
   </section>
 
-  <!-- <script id="template-product" type="text/x-handlebars-template">
-    <section class="product">
-      <div class="container">
-          <h2 class="section-title">{{ title }}</h2>
-          <article class="product-left">
-              <div class="product-image">
-                  <img src="{{ image }}">
-              </div>
-              <div class="product-description">
-                  <h3 class="product-title">{{ description }}</h3>
-                  <p class="roasting">ROASTING: <span>{{ roasting }}</span></p>
-                  <p class="intensity">INTENSITY: <span> {{ intensity }}</span></p>
-              </div>
-          </article>
-      </div>
-    </section>
-  </script> -->
-
   <script id="template-product" type="text/x-handlebars-template">
-    <section class="skills">
-      <div class="container">
-          <h2 class="section-title">{{ title }}</h2>
-          <article class="skill-right">
-              <div class="skill-image">
-                <img src="{{ image }}">
-              </div>
-              <div class="skill-description col-5">
-                  <h3 class="skill-title">{{ description }}</h3>
-                  <p class="roasting">ROASTING: <span>{{ roasting }}</span></p>
-                  <p class="intensity">INTENSITY: <span> {{ intensity }}</span></p>
-              </div>
-          </article>
+      <div class="products">
+        <div class="product-title">
+          <h2>{{ title }}</h2>
+        </div>
+        <div class="product-description col-4">
+          <p>{{ description }}</p>
+        </div>
+        <div class="product-info">
+          <p class="roasting">ROASTING: <span>{{ roasting }}</span></p>
+          <p class="intensity">INTENSITY: <span> {{ intensity }}</span></p>
+        </div>
+        <div class="product-image col-12">
+          <img src="{{ image }}" alt="coffe-1">
+        </div>
       </div>
-    </section>
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>

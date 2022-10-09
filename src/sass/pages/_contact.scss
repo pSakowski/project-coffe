@@ -1,0 +1,23 @@
+.contact {
+    text-align: center;
+    font-family: $font-header;
+    padding-bottom: 100px;
+
+    p {
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+
+    text {
+        color: red;
+    }
+
+    input {
+        background-color: $color-first;
+        color: white;
+        border: 0;
+        height: 45px;
+        width: 140px;
+        letter-spacing: 2px;
+    }
+}

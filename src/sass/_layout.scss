@@ -48,25 +48,17 @@
   background-size: cover;
   font-family: $font-header;
   font-size: 50px;
-  @media (max-width: 800px){
-    font-size: 1.5rem;
-  }
 
   .logo {
     top: 300px;
     position: relative;
     color: $color-first;
     letter-spacing: 5px;
-    font-size: 65px;
-    @media (max-width: 1400px){
-      font-size: 60px;
-      top: 250px;
-    }
-    @media (max-width: 1030px){
-      font-size: 50px;
-    }
-    @media (max-width: 870px){
-      font-size: 30px;
+    font-size: 60px;
+
+    @media (max-width: 620px){
+      font-size: 40px;
+      text-align: center;
     }
 
     .logo-ho {
@@ -92,60 +84,79 @@
 .discover {
   position: relative;
   text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  top: 750px;
-  @media (max-width: 1400px){
-    top: 750px;
+  font-size: 25px;
+  top: 730px;
+  letter-spacing: 4px;
+  line-height: 20px;
+
+  @media (max-width: 1020px){
+    top: 600px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
   }
 }
 
 /* ABOUT US */
 
 .about-us {
-  margin-top: 50px;
-  padding: 20px;
+  margin-top: 40px;
+  padding: 15px;
   position: relative;
-  text-align: center;
   background: linear-gradient( rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7) ),url("/images/about-us.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
   font-family: $font-header;
+  height: 60vh;
+
+  .container {
+    width: 40%;
+
+    @media (max-width: 975px){
+      width: 80%;
+    }
+  }
+
+  .about {
+    text-align: center;
+    font-family: $font-header;
+    color: $color-first;
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
 
   hr {
     color: $color-first;
     position: relative;
+    top: -15px;
     border: 2px solid;
     border-radius: 2px;
-    width: 60%;
-  }
-
-  h1 {
-    padding: 10px;
-    margin: 0;
-    letter-spacing: 8px;
-    font-size: 50px;
-    color: $color-first;
+    width: 80%;
   }
 
   p {
+    letter-spacing: 2px;
     text-align: left;
-    margin: 40px 100px;
-    position: relative;
-    letter-spacing: 1px;
+    width: 100%;
+    font-size: 30px;
     color: white;
-    font-size: 25px;
-    @media (max-width: 550px){
-      font-size: 1.1rem;
+    font-size: 35px;
+
+    @media (max-width: 510px){
+      font-size: 20px;
     }
   }
 
-  p:last-of-type {
-    width: 70%;
+  p:nth-child(1) {
+    padding-top: 60px;
     text-align: right;
-    margin: 0 auto;
-    padding-right: 90px;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 

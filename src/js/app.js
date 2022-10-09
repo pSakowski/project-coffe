@@ -1,6 +1,5 @@
-import {settings, select, classNames } from './settings.js';
+import {settings, select, classNames} from './settings.js';
 import Product from './Products.js';
-// import Contact from './Contact.js';
 
 const app = {
 
@@ -27,13 +26,6 @@ const app = {
       new Product(thisApp.data.products[product]);
     }
   },
-
-  // initContact: function () {
-  //   const thisApp = this;
-
-  //   thisApp.contactPage = document.querySelector(select.containerOf.contact);
-  //   thisApp.contact = new Contact(thisApp.contactPage);
-  // },
 
   initPages: function(){
     const thisApp = this;
@@ -102,7 +94,6 @@ const app = {
 
     thisApp.initData();
     thisApp.initPages();
-    // thisApp.initContact();
   },
 };
 
