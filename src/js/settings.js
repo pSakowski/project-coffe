@@ -6,6 +6,7 @@ export const select = {
   containerOf: {
     menu: '#product-list',
     pages: '#pages',
+    contact: '#contact',
   },
   nav: {
     links: '.navigation a',
