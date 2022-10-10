@@ -5,60 +5,76 @@
   color: $color-first;
   font-size: 30px;
   letter-spacing: 10px;
-    
-  hr {
-    color: $color-first;
-    position: relative;
-    top: -15px;
-    border: 2px solid;
-    border-radius: 2px;
-    width: 30%;
-  }
 }
 
-/* Skills */
-
-[class^="skill-"] {
-  position: relative;
-  max-width: 1100px;
-}
-
-.skill-image {
+.product-line {
+  color: $color-first;
+  border: 2px solid;
+  border-radius: 2px;
+  width: 40%;
+  text-align: center;
   position: absolute;
-  width: 25%;
-  height: 130%;
-  overflow: hidden;
-  z-index: 2;
+  top: 110%;
+  left: 50%;
 }
 
-.skill-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: unset;
-  transition: all 1s;
+.product {
+  font-family: $font-header;
 }
 
-.skill-right .skill-image {
-  right: 0;
+.product .box {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: row;
 }
 
-.skill-right .skill-description {
-  // padding: 36px 55% 36px 0;
-  text-align: left;
+.product:nth-child(3n) .box {
+  flex-direction: row-reverse;
 }
 
-.skill-description {
+.product {
+  margin-top: 40px;
+}
 
-  h3 {
-    left: 50px;
+.name {
+  position: relative;
+  font-size: 15px;
+  letter-spacing: 3px;
+  margin: 0 10px;
+
+  .description {
+    opacity: 0.8;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: 0 0 0 60px;
+  }
+
+  .roasting,
+  .intensity {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: bold;
+
+  span {
+    color: $color-first;
   }
 }
 
-.skill-left .skill-description {
-  padding: 36px 0 36px 55%;
-  text-align: left;
+  @media(max-width: 400px){
+    font-size: 15px;
+  }
+}
+  
+.image {
+  display: flex;
 }
 
-.skill-image img:hover {
-  transform: scale(1.2);
+img {
+  width: 150%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 20px 3px gray;
 }

@@ -1,23 +1,34 @@
 .contact {
-    text-align: center;
-    font-family: $font-header;
-    padding-bottom: 100px;
+  text-align: center;
+  font-family: $font-header;
+  padding-bottom: 100px;
 
-    p {
-        letter-spacing: 2px;
-        font-weight: 600;
-    }
+  p {
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
 
-    text {
-        color: red;
-    }
+  text {
+    color: red;
+  }
 
-    input {
-        background-color: $color-first;
-        color: white;
-        border: 0;
-        height: 45px;
-        width: 140px;
-        letter-spacing: 2px;
-    }
+  input {
+    background-color: $color-first;
+    color: white;
+    border: 0;
+    height: 45px;
+    width: 140px;
+    letter-spacing: 2px;
+  }
+}
+
+.contact-line {
+  color: $color-first;
+  border: 2px solid;
+  border-radius: 2px;
+  width: 40%;
+  text-align: center;
+  position: absolute;
+  top: 110%;
+  left: 50%;
 }
