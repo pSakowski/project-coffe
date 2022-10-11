@@ -27,6 +27,26 @@
 
 .product:nth-child(3n) .box {
   flex-direction: row-reverse;
+
+  .stamp {
+    display: none;
+  }
+}
+
+.product:nth-child(4n) .box {
+  
+  .stamp {
+    display: none;
+  }
+}
+
+.stamp {
+  position: relative;
+
+  img {
+    position: absolute;
+    text-align: right;
+  }
 }
 
 .name {
