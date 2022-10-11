@@ -51,6 +51,11 @@ h1 {
    */
   
 hr {
+  border: 2px solid;
+  border-radius: 2px;
+  width: 40%;
+  text-align: center;
+  top: 100%;
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */

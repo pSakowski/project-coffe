@@ -9,6 +9,7 @@ class Product {
     thisProduct.data = data;
 
     thisProduct.renderInMenu();
+    thisProduct.initWidgets();
   }
 
   renderInMenu(){
@@ -25,6 +26,21 @@ class Product {
 
     /* add element to menu */
     menuContainer.appendChild(thisProduct.element);
+  }
+
+  initWidgets(){
+    const elem = document.querySelector('.main-carousel');
+
+    //eslint-disable-next-line no-undef
+    new Flickity (elem, {
+      //options
+      cellAlign: 'left',
+      contain: true,
+      autoPlay: true,
+      prevNextButtons: false,
+      wrapAround: true,
+      imagesLoaded: true,
+    });
   }
 }
 
