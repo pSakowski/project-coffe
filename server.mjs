@@ -1,24 +1,19 @@
 import path from 'path';
-import express from 'express';
+import jsonServer from 'json-server';
 
-const app = express();
-const port = process.env.PORT || 3000;
-const publicPath = new URL('../dist', import.meta.url).pathname;
-
-app.use(express.static(publicPath));
-
-app.get('/', (req, res) => {
-  res.sendFile(path.join(publicPath, 'index.html'));
+const server = jsonServer.create();
+const router = jsonServer.router('app.json');
+const middlewares = jsonServer.defaults({
+  static: 'dist',
+  noCors: true
 });
+const port = process.env.PORT || 3131;
 
-app.get('/contact.html', (req, res) => {
-  res.sendFile(path.join(publicPath, 'contact.html'));
-});
+server.use(middlewares);
+server.use(router);
 
-app.get('/products.html', (req, res) => {
-  res.sendFile(path.join(publicPath, 'products.html'));
-});
-
-app.listen(port, () => {
+server.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+export default server;
