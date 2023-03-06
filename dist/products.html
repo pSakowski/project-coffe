@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffe EL TIGRE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" href="./vendor/range-slider.min.css">
+    <link rel="stylesheet" href="./vendor/flickity.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <h1 class="logo-ti">EL TIGRE</h1>
+            <h1 class="logo-ve">VENEZUELA COFFEE BEANS</h1>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="logo">
+        <h1 class="home">HOME OF</h1>
+        <h1 class="original">ORIGINAL TASTES</h1>
+        <hr>
+      </div>
+      <div class="discover">
+        <a href="#products" class="btn btn-one">DISCOVER</a>
+        <i class="fa-regular fa-circle-down"></i>
+      </div>
+    </div>
+  </header>
+
+  <section id="pages">
+
+    <section id="products">
+      <div id="product-list">
+        <div class="title">
+          <h1>PRODUCTS</h1>
+          <hr>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="contact">
+      <div class="title">
+        <h1>CONTACT US</h1>
+        <hr>
+      </div>
+      <form>
+        <p>NAME</p>
+        <textarea name="text" cols="35" rows="1"></textarea>
+        <p>TITLE</p>
+        <textarea name="text" cols="35" rows="1"></textarea>
+        <p>MESSAGE</p>
+        <textarea name="text" cols="35" rows="5"></textarea>
+        <br><br>
+        <button type="submit" class="btn">SUBMIT</button>
+        </div>
+      </form>
+    </section> -->
+
+    <!-- <section class="about-us">
+      <div class="container">
+        <div class="about">
+          <h1>ABOUT US</h1>
+          <hr>
+        </div>
+        <div class="main-carousel">
+          <div class="carousel-cell">
+            <img src="images/3.png">
+            <p>Elizabeth <b>Doherty</b></p>
+            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas viverra tortor, eu ullamcorper dui imperdiet nec.</i></p>
+          </div>
+          <div class="carousel-cell">
+            <img src="images/2.png">
+            <p>Max <b>Selfish</b></p>
+            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas viverra tortor, eu ullamcorper dui imperdiet nec.</i></p>
+          </div>
+          <div class="carousel-cell">
+            <img src="images/1.png">
+              <p>Ping <b>Nihao</b></p>
+              <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas viverra tortor, eu ullamcorper dui imperdiet nec.</i></p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <footer><p>© 2021 EL TIGRE inc.</p></footer>
+  </section>
+
+  <script id="template-product" type="text/x-handlebars-template">
+    <article class='product'>
+        <div class='box'>
+          <div class="stamp">
+            <img src="images/stamp.png">
+          </div>
+          <div class='name'>
+            <h2>{{ title }}</h2>
+            <p class="description">{{ description }}</p>
+            <p class="roasting">ROASTING: <span>{{ roasting }}</span></p>
+            <p class="intensity">INTENSITY: <span>{{ intensity }}</span></p>
+          </div>
+          <div class="image">
+            <img src="{{ image }}"/>
+          </div>
+        </div>
+    </article>
+  </script>
+
+  <script src="./vendor/range-slider.min.js"></script>
+  <!-- <script src="./vendor/flickity.pkgd.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+  <script src="/js/app.js" type="module"></script>
+  </body>
+</html>
